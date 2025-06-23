@@ -8,4 +8,4 @@ the folowing python pakages are required:
 <br/>-tkcalendar
 
 ##Built versions comming soon
-Thanks to @Waspsting https://github.com/Waspsting
+Thanks to [@Waspsting](https://github.com/Waspsting) for helping me with this progect!
