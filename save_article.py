@@ -1,4 +1,3 @@
-import uuid
 import re
 import urllib.parse
 
@@ -24,7 +23,7 @@ def save_article(title, description, content, name, program, level, image, date,
     print("save_article function called")
 
     processed_article_file = {
-        "id": str(uuid.uuid4()),
+        "id": "",
         "article": sanitize_title_for_url(title),
         "title": title,
         "description": description,
@@ -63,7 +62,7 @@ def save_article(title, description, content, name, program, level, image, date,
 }}
 """
 
-    filename = f"{processed_article_file['id']}.json"
+    filename = f"{processed_article_file['article']}.json"
     with open(filename, 'w') as file:
         file.write(output)
 
