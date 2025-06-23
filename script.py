@@ -15,7 +15,7 @@ InstructionsFont = font.Font(family="Comic Sans", size=12)
 NoteFont = font.Font(family="Comic Sans", size=10)
 
 def validate_input(new_value):
-    if new_value.isdigit() or new_value == "":
+    if new_value.isdigit(1,2,3,4,5) or new_value == "":
         return True
     return False
 
@@ -49,7 +49,7 @@ Programe.grid(row=6, column=0, padx=10, pady=5, sticky='w')
 
 program_selectione_option = tk.StringVar()
 program_selectione_option.set("Choisissez votre programme")
-programes_options = ["PEI", "Exploraction"]
+programes_options = ["PEI", "Exploraction", "Classe Specialisés", "Classes d'acceuil", "Groupes TSA"]
 
 dropdown = tk.OptionMenu(window, program_selectione_option, *programes_options)
 dropdown.grid(row=6, column=1, padx=10, pady=5)
