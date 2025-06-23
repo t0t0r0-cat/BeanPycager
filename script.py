@@ -73,9 +73,9 @@ img_url = ""  # Initialize img_url globally
 def upload_file():
     global img_url  # Declare img_url as global
     file_types = [("Image Files", "*.jpg;*.png")]
-    file_path = filedialog.askopenfilename(filetypes=file_types)
-    if file_path:
-        img_url = file_path  # Assign the selected file path to the global variable
+    file_name = filedialog.askopenfilename(filetypes=file_types)
+    if file_name:
+        img_url = file_name  # Assign the selected file path to the global variable
 
 upload_button = tk.Button(window, text="Telechargement", command=upload_file)
 upload_button.grid(row=9, column=1, padx=10, pady=5, sticky='e')
