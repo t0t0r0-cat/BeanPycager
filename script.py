@@ -102,6 +102,7 @@ def on_submit():
     image_alt = alt_text_entry.get()
 
     save_article.save_article(title, description, content, name, program, level, image, date, image_alt)
+    submit_button.config(text="Validé!", bg="lightblue", fg="white")
 
 submit_button = tk.Button(window, text="Valider", command=on_submit)
 submit_button.grid(row=13, column=0, padx=10, pady=5, sticky='w')
